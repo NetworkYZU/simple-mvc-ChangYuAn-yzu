@@ -49,8 +49,11 @@ public class Student {
     private static Map<String, Student> db=new HashMap<>();
     
     static{
-        db.put("id1", new Student("id1", "name1", 60));
-        db.put("id2", new Student("id2", "name2", 50));
-        db.put("id3", new Student("id3", "name3", 80));
+        db.put("id1", new Student("1070000", "Tom", 60));
+        db.put("id2", new Student("1070428", "Billy", 50));
+        db.put("id3", new Student("1070415", "ChangYuAn", 80));
+    }
+    public static Student getStudent(String id){
+        return db.get(id);
     }
 }
